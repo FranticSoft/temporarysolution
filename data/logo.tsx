@@ -8,53 +8,55 @@ export const Logo: React.FC<HTMLChakraProps<'svg'>> = (props) => {
       viewBox="0 0 550 172"
       {...props}
     >
-     <svg width="200" height="200" viewBox="0 0 60 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_5_2)">
-<path d="M52.5 25.6699C55.8333 27.5944 55.8333 32.4056 52.5 34.3301L22.5 51.6506C19.1667 53.5751 15 51.1695 15 47.3205L15 12.6795C15 8.83049 19.1667 6.42486 22.5 8.34936L52.5 25.6699Z" fill="#0000FF"/>
+<svg width="310" height="204" viewBox="0 0 179 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M105.411 0C112.962 0 119.757 3.48665 124.484 9.04682C126.038 8.73317 127.64 8.56913 129.278 8.56913C140.526 8.56913 150.097 16.3059 153.653 27.1085C168.279 31.5471 179 46.0238 179 63.1975C179 83.0367 164.693 99.2767 146.586 100.6C146.462 100.656 146.323 100.687 146.178 100.687H144.275C144.248 100.688 144.221 100.688 144.194 100.688C144.167 100.688 144.14 100.688 144.113 100.687H34.8865C34.8595 100.688 34.8325 100.688 34.8056 100.688C34.7786 100.688 34.7516 100.688 34.7246 100.687H32.8222C32.6766 100.687 32.5382 100.656 32.4135 100.6C14.3067 99.2766 0 83.0367 0 63.1975C0 42.4924 15.583 25.7075 34.8056 25.7075C37.6177 25.7075 40.3519 26.0667 42.9708 26.7449C47.6334 17.2112 56.9231 10.7114 67.6222 10.7114C73.0297 10.7114 78.0771 12.3718 82.3491 15.245C86.6195 6.19808 95.3433 0 105.411 0Z" fill="white"/>
+<g filter="url(#filter0_d_3_550)">
+<path d="M126.043 51.4862C132.71 55.3352 132.71 64.9577 126.043 68.8067L79.5107 95.6721C72.8441 99.5211 64.5107 94.7099 64.5107 87.0119L64.5107 33.2811C64.5107 25.5831 72.8441 20.7718 79.5107 24.6208L126.043 51.4862Z" fill="#0000FF"/>
 </g>
-<g filter="url(#filter1_d_5_2)">
-<path d="M47 25.5885C50.3333 27.513 50.3333 32.3242 47 34.2487L27.5 45.5071C24.1667 47.4316 20 45.0259 20 41.1769L20 18.6603C20 14.8113 24.1667 12.4056 27.5 14.3301L47 25.5885Z" fill="#0066FF"/>
+<g filter="url(#filter1_d_3_550)">
+<path d="M116.689 51.3477C123.356 55.1967 123.356 64.8192 116.689 68.6682L88.0143 85.2236C81.3477 89.0726 73.0143 84.2613 73.0143 76.5633V43.4526C73.0143 35.7546 81.3477 30.9434 88.0143 34.7924L116.689 51.3477Z" fill="#0066FF"/>
 </g>
-<g filter="url(#filter2_d_5_2)">
-<path d="M33.5962 26.1811C36.9037 28.1105 36.9037 32.8895 33.5962 34.8189L18.5194 43.6137C15.1861 45.5581 11 43.1538 11 39.2948L11 21.7052C11 17.8462 15.1861 15.4419 18.5194 17.3863L33.5962 26.1811Z" fill="url(#paint0_linear_5_2)"/>
+<g filter="url(#filter2_d_3_550)">
+<path d="M93.9217 52.3591C100.537 56.2179 100.537 65.7759 93.9217 69.6347L72.7466 81.9869C66.08 85.8757 57.7079 81.067 57.7079 73.3491L57.7079 48.6448C57.7079 40.9269 66.08 36.1182 72.7466 40.007L93.9217 52.3591Z" fill="url(#paint0_linear_3_550)"/>
 </g>
 <defs>
-<filter id="filter0_d_5_2" x="11" y="7.67203" width="48" height="54.6559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_3_550" x="56.5107" y="23.2661" width="82.5322" height="93.7607" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="6"/>
-<feGaussianBlur stdDeviation="2"/>
+<feOffset dy="12"/>
+<feGaussianBlur stdDeviation="4"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_2"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_2" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_550"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_550" result="shape"/>
 </filter>
-<filter id="filter1_d_5_2" x="16" y="13.6528" width="37.5" height="42.5316" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_3_550" x="65.0143" y="33.4377" width="64.6747" height="73.1404" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="6"/>
-<feGaussianBlur stdDeviation="2"/>
+<feOffset dy="12"/>
+<feGaussianBlur stdDeviation="4"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_2"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_2" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_550"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_550" result="shape"/>
 </filter>
-<filter id="filter2_d_5_2" x="7" y="16.6977" width="33.0768" height="37.6047" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_d_3_550" x="49.7079" y="38.6296" width="57.1751" height="64.7346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="6"/>
-<feGaussianBlur stdDeviation="2"/>
+<feOffset dy="12"/>
+<feGaussianBlur stdDeviation="4"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_2"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_2" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_550"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_550" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_5_2" x1="11" y1="41" x2="28.5" y2="1.5" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_3_550" x1="57.7079" y1="78.8544" x2="87.4704" y2="11.6761" gradientUnits="userSpaceOnUse">
 <stop stop-color="#2AB4D9"/>
 <stop offset="1" stop-color="#2AB4D9"/>
 </linearGradient>
 </defs>
 </svg>
+
     </chakra.svg>
   )
 }

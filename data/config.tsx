@@ -8,8 +8,8 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'FCloud - The New Cloud On The Block',
-    description: 'The new cloud on the block. Sign up now and get 5GB of free storage when we launch.',
+    title: 'FCloud - Your Entire Digital Life, All in One Place.',
+    description: 'Your Entire Digital Life, All in One Place. Sign up now and get 5GB of free storage when we launch.',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',

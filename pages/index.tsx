@@ -61,7 +61,7 @@ const Home: NextPage = () => {
   return (
     <Box> 
       <SEO
-        title="FCloud | The new cloud on the block"
+        title="FCloud | Your Entire Digital Toolkit, All in One Place."
         description="Cheap cloud services have never been easier to use"
       />
       <Box>
@@ -93,15 +93,13 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                The new cloud
-                <Br /> on the block
+                Your Entire Digital Life,
+                <br/> All in One Place.
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                FCloud is a <Em>brand new cloud platform</Em>
-                <Br />that makes the Cloud and Pay-as-you-go pricing<Br />{" "}
-                accessable to <Em>everyone.</Em>
+                FCloud brings multiple services <Em>together</Em> in one easy platform, with <Em>flexible, pay-as-you-go pricing</Em> anyone can use.
               </FallInPlace>
             }
           >
@@ -109,7 +107,7 @@ const HeroSection: React.FC = () => {
               <HStack pt="4" pb="12" spacing="8">
               </HStack>
 
-                <Button colorScheme="cyan">Sign up now</Button>
+                <Button colorScheme="cyan" onClick={() => window.location.href = '/signup'}>Sign up now</Button>
             </FallInPlace>
           </Hero>
           <Box
@@ -173,10 +171,10 @@ const HeroSection: React.FC = () => {
             delay: 1,
           },
           {
-            title: "Scalable",
+            title: "Unlimited",
             icon: FiArrowUpRight,
             description:
-              "Designed to scale for all use cases. Pay only for what you use.",
+              "Unlimited storage, unlimited messages, unlimited everything. No more worrying about hitting your limit.",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -202,7 +200,7 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsItem title="Solid foundations">
         <Text color="muted" fontSize="lg">
-          Our services are built on top-notch, hard as nails infrastucture, so you never have to worry about a thing. Our services are built using AWS, Backblaze, and soon our own infrastucture.
+          Our services are built on top-notch, hard as nails infrastucture, so you never have to worry about a thing. Our services are built using AWS and Backblaze.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -264,7 +262,7 @@ const FeaturesSection = () => {
         <>
           Who said the cloud wasn't for the everyday man?
           <Br />
-          From your grandmother, to a big business, everyone is a able to harness the low prices and freedom of cloud services.
+          From your grandmother, to a big business, everyone is a able to harness the low prices and freedom of FCloud.
         </>
       }
       align="left"
@@ -370,7 +368,7 @@ export async function getStaticProps() {
     props: {
       announcement: {
         title: "Email signups are now open!",
-        href: "https://www.frantic-software.com/#",
+        href: "https://fcloud.app/signup",
         action: false,
       },
     },

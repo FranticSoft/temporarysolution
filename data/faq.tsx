@@ -15,16 +15,20 @@ const faq = {
       ),
     },
     {
-      q: 'How much can I store in Cloud Store?',
-      a: "You can store a virtually unlimited amount in Cloud Store. Since you're not locked into tiers, you have no limits on how much you can store. Just pay for what you use.",
+      q: 'Is my data secure in FCloud?',
+      a: "Yes, we take security very seriously. We use the latest security measures to keep your data safe. We partner with Backblaze, a cloud infrastructure provider to keep your data safe, from upload to the physical security of the datacenter.",
     },
     {
       q: 'How do I contact support?',
-      a: 'Email support@fcloud.app.',
+      a: 'Email support@fcloud.app or call +1 (551)-FRANTIC.',
     },
     {
-      q: "I'm a big business, can I use FCloud?",
-      a: 'Absolutely! If you have any special needs for your business, contact support and we can help you.',
+      q: "I own a business, can I use FCloud?",
+      a: 'Absolutely! If you have any special needs for your business, contact support and we can help you. We offer special pricing for businesses as well.',
+    },
+    {
+      q: 'Are there any minimum fees?',
+      a: 'Yes, there is a $1 minimum fee per month. This is only applied if you use more than the free tier of any one service. Read more about this base fee at docs.fcloud.app',
     },
   ],
 }
