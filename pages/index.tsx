@@ -17,7 +17,12 @@ import {
   IconButton,
   VStack,
   Flex,
+  Avatar,
+  useColorModeValue,
+  Card,
+  CardBody
 } from "@chakra-ui/react";
+
 import { SEO } from "components/seo/seo";
 import { FallInPlace } from "components/motion/fall-in-place";
 import { Hero } from "components/hero";
@@ -35,6 +40,7 @@ import {
   FiSmartphone,
   FiSmile,
   FiUserPlus,
+  FiLink,
 } from "react-icons/fi";
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
@@ -54,6 +60,7 @@ import {
   HighlightsItem,
   HighlightsTestimonialItem,
 } from "components/highlights";
+
 import { FaBolt, FaItalic } from "react-icons/fa";
 
 
@@ -70,6 +77,8 @@ const Home: NextPage = () => {
         <HighlightsSection />
 
         <FeaturesSection />
+
+        <Stats />
 
         <PricingSection />
 
@@ -163,10 +172,10 @@ const HeroSection: React.FC = () => {
             delay: 0.8,
           },
           {
-            title: "Easy on the eyes",
-            icon: FiEye,
+            title: "Connected",
+            icon: FiLink,
             description:
-              "Always has a dark mode, and always on by default. Never get flash-banged in the middle of the night again.",
+              "All our services work seamlessly together, creating a more cohesive experience for you.",
             iconPosition: "left",
             delay: 1,
           },
@@ -193,7 +202,7 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Multitude of services">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started today with our <Em>world class services</Em>.
+            Get started today with our <Em>several great services</Em>.
             Including Cloud Store, our high-capacity, cheap cloud storage service. And Satellite, an amazing way to share files to your friends and family. But thats not all. New services are coming all the time, keep yourself updated for when a new service drops, because you'll want to know!
           </Text>
         </VStack>
@@ -242,6 +251,237 @@ const HighlightsSection = () => {
     </Highlights>
   );
 };
+
+const StatsCard = ({ title, children, description, gridColumn, ...rest }) => {
+  return (
+    <Card
+      gridColumn={gridColumn}
+      borderRadius="lg"
+      variant="solid"
+      gap="2"
+      py="4"
+      px="4"
+      bg="gray.50"
+      boxShadow="sm"
+      borderWidth="1px"
+      borderColor="inherit"
+      position="relative"
+      overflow="hidden"
+      _dark={{
+        bg: 'gray.800',
+        borderColor: 'transparent',
+      }}
+    >
+      <CardBody>
+        <Stack {...rest}>
+          <Box>
+            <Heading
+              as="h3"
+              color="cyan.500"
+              fontWeight="medium"
+              fontSize="lg"
+              mb="2"
+              _dark={{
+                color: 'cyan.300',
+              }}
+            >
+              {title}
+            </Heading>
+
+            <Text fontWeight="medium" fontSize="1.3em" maxW="80%">
+              {description}
+            </Text>
+          </Box>
+
+          {children}
+        </Stack>
+      </CardBody>
+    </Card>
+  )
+}
+
+const Stats = () => {
+  return (
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      width: '75vw',
+      margin: 'auto',
+    }}>
+
+    <VStack>
+      <Heading
+        as="h2"
+        fontSize="4xl"
+        textAlign="center"
+        mb="8">
+          That was a lot of information, let's recap.
+        </Heading>
+
+      <Box
+        display="grid"
+        gridTemplateColumns={{ base: 'repeat(3, 1fr)', lg: 'repeat(6, 1fr)' }}
+        gap={{
+          base: '32px 0',
+          md: 8,
+        }}
+      >
+        <StatsCard
+          title="4+ Services"
+          description="Multiple services, all in one place. Cloud Store, PlanWise, and more."
+          flexDirection={{
+            base: 'column',
+            md: 'row',
+          }}
+          alignItems="center"
+          gridColumn="span 3"
+        >
+          <Box
+            width={{
+              base: '100%',
+              md: '240px',
+            }}
+            height={{ base: '140px', md: '280px' }}
+          >
+            <Box
+              overflow="hidden"
+              borderRadius="md"
+              position="absolute"
+              boxShadow="xl"
+              right={{ base: 'auto', md: 8 }}
+              bottom={{ base: '-220px', md: 'auto' }}
+              _dark={{ display: 'none' }}
+            >
+              <Image
+                src="/static/images/services.svg"
+                width="229"
+                height="369"
+                alt="List of FCloud services"
+              />
+            </Box>
+            <Box
+              overflow="hidden"
+              position="absolute"
+              boxShadow="xl"
+              right={{ base: 'auto', md: 8 }}
+              bottom={{ base: '-220px', md: 'auto' }}
+              _light={{ display: 'none' }}
+            >
+              <Image
+                src="/static/images/services.svg"
+                width="263"
+                height="424"
+                alt="List of FCloud services"
+              />
+            </Box>
+          </Box>
+        </StatsCard>
+        <StatsCard
+          title="Slash your bill"
+          description="Most services have a free tier, so you can try them all out without paying anything."
+          gridColumn="span 3"
+        >
+          <Box width="100%" height="140px">
+            <Box
+              overflow="hidden"
+              borderRadius="md"
+              position="absolute"
+              right="50"
+            >
+              <Image
+                src="/static/images/cutthetag.svg"
+                width="2186"
+                height="270"
+                alt="Cut the tag illustration"
+              />
+            </Box>
+          </Box>
+        </StatsCard>
+        <StatsCard
+          title="Pay-as-you-go pricing"
+          description={
+            <>
+              All our services use pay-as-you-go pricing, so you never pay for what you dont use.
+            </>
+          }
+          gridColumn="span 4"
+          flexDirection={{
+            base: 'column',
+            md: 'row',
+          }}
+          alignItems="center"
+        >
+          <Box
+            width="1240px"
+            height={{
+              base: '150px',
+              md: '300px',
+            }}
+          >
+            <Box>
+              <Image
+                src="/static/images/payasyougo.svg"
+                width="2480"
+                height="1600"
+                quality={100}
+                alt="Example blocks"
+              />
+            </Box>
+          </Box>
+        </StatsCard>
+        <StatsCard
+          title="Better together"
+          description="Our services work together seamlessly, creating a more cohesive experience for you."
+          gridColumn={{
+            base: 'span 3',
+            md: 'span 2',
+          }}
+          flexDirection="column-reverse"
+        >
+                  <Box height="160px">
+            <Box
+              position="absolute"
+              top="-100px"
+              left="0"
+              width="100%"
+              _dark={{ display: 'none' }}
+            >
+              <Image
+                src="/static/images/bettertogether.svg"
+                width="400"
+                height="400"
+                quality="100"
+                alt="Icon preview"
+                style={{ objectFit: 'contain' }}
+              />
+            </Box>
+            <Box
+              position="absolute"
+              top="-100px"
+              left="0"
+              width="100%"
+              _light={{ display: 'none' }}
+            >
+              <Image
+                src="/static/images/bettertogether.svg"
+                width="400"
+                height="400"
+                quality="100"
+                alt="Icon preview"
+                style={{ objectFit: 'contain' }}
+              />
+            </Box>
+          </Box>
+        </StatsCard>
+      </Box>
+      </VStack>
+    </div>
+  )
+}
+
+
 
 const FeaturesSection = () => {
   return (
@@ -367,7 +607,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "Email signups are now open!",
+        title: "Wanna try it out? Sign up for the beta!",
         href: "https://fcloud.app/signup",
         action: false,
       },
